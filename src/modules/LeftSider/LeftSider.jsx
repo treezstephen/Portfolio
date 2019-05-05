@@ -1,18 +1,17 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-class App extends Component {
+class LeftSider extends Component {
   constructor() {
     super();
   }
 
   render() {
     return (
-      <div>
-        Hello World
+      <div className='left-sider-container'>
       </div>
     );
   }
 }
 
-export default App;
+export default LeftSider;

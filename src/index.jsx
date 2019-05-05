@@ -5,6 +5,8 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
 import configureStore from './redux/configureStore'
 
+import "./styles.scss";
+
 import AppContainer from './containers/AppContainer';
 
 ReactDOM.render(

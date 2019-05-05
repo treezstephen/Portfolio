@@ -1,0 +1,21 @@
+.nav-bar-container {
+    margin: 5px 0;
+    padding: 0 30px;
+    height: 100px;
+}
+
+.numbered-list-item {
+    display: flex;
+    font-size: 13px;
+    margin: 0 13px;
+}
+
+.numbered-list-item .number{
+    color: $secondary-font-color;
+    letter-spacing: 1.5px;
+}
+
+.numbered-list-item .text{
+    color: $third-font-color;
+    letter-spacing: 1.5px;
+}
