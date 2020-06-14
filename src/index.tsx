@@ -1,6 +1,11 @@
-import ReactDOM from 'react-dom';
-import React    from 'react';
+import ReactDOM        from 'react-dom';
+import React           from 'react';
 
-import App      from './App';
+import './styles/stylesheets/app.scss';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { App }   from './pages/App';
+
+ReactDOM.render(
+    <App />, 
+    document.getElementById('root'),
+);

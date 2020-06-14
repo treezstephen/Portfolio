@@ -1,0 +1,13 @@
+@import './colors.scss';
+@import './fonts.scss';
+
+#root {
+    height: 100vh;
+}
+
+body {
+    font-family: $default-font;
+    -webkit-font-smoothing: antialiased;
+    color: $white;
+    background-color: $blue-primary;
+}
