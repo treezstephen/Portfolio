@@ -16,26 +16,6 @@ export const NavBar: FunctionComponent = () => {
     
     const [isOpen, setIsOpen] = useState<boolean>(false);
     
-    const barAnimation = useSpring({
-        from: { 
-            transform: 'translate3d(0, -10rem, 0)',
-        },
-        transform: 'translate3d(0, 0, 0)',
-    });
-    
-    const linkAnimation = useSpring({
-        config: config.wobbly,
-        delay:  800,
-        from:   { 
-            opacity:   0 ,
-            transform: 'translate3d(0, 30px, 0)', 
-        },
-        to: { 
-            opacity:   1, 
-            transform: 'translate3d(0, 0, 0)', 
-        },
-    });
-    
     const items = [
         <Link key='home'       to='/'            onClick={() => setIsOpen(false)}>HOME       </Link>,
         <Link key='about'      to='/about'       onClick={() => setIsOpen(false)}>ABOUT       </Link>,
@@ -56,28 +36,26 @@ export const NavBar: FunctionComponent = () => {
         x:       isOpen ? 0 : 20,
     });
     
+    const NavSpacer = () => {
+        return (
+            <div className='nav-spacer'></div>
+        );
+    }
+    
     return (
         <>
-            <animated.div 
-                className = 'nav-bar space-between'
-                style     = { barAnimation }
-            >
-                <animated.div 
-                    className = 'aligned'
-                    style     = { linkAnimation } 
-                >
-                    <a 
-                        className = 'name' 
-                    >
+            <div className = 'nav-bar space-between'>
+                <div className = 'aligned'>
+                    <a className = 'name'>
                         Stephen Cheung
                     </a>
-                </animated.div>
+                </div>
                 <HamburgerCollapseReverse
                     barColor     = { PRIMARY_TEXT_COLOR }
                     isActive     = { isOpen }
                     toggleButton = { () => setIsOpen(!isOpen) }
                 />
-            </animated.div>    
+            </div>    
             {
                 <div className = {`'nav-menu nav-overlay ${isOpen ? 'open' : ''}`}>
                     <div className = 'nav-overlay-links' >
@@ -95,6 +73,7 @@ export const NavBar: FunctionComponent = () => {
                     </div>
                 </div>
             }
+            <NavSpacer />
         </>
     );
 };

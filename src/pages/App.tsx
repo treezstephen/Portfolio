@@ -8,23 +8,26 @@ import {
 } from 'react-router-dom';
 import { NavBar }              from '../components/NavBar';
 import { About }               from './About';
-import { Experiences }         from './Experiences';
-import { Projects }            from './Projects';
 import { Contact }             from './Contact';
+import { Experiences }         from './Experiences';
 import { Home }                from './Home';
+import { Projects }            from './Projects';
 
 export const App: FunctionComponent = () => {
     return (
         <Router>
             <NavBar />
-            
-            <Switch>
-                <Route path='/about'        component={About} />
-                <Route path='/experiences'  component={Experiences} />
-                <Route path='/projects'     component={Projects} />
-                <Route path='/contact'      component={Contact} />
-                <Route path='/'             component={Home} />
-            </Switch>
+            <div className="container">
+                <div className="section">
+                    <Switch>
+                        <Route path='/about'        component={About} />
+                        <Route path='/experiences'  component={Experiences} />
+                        <Route path='/projects'     component={Projects} />
+                        <Route path='/contact'      component={Contact} />
+                        <Route path='/'             component={Home} />
+                    </Switch>    
+                </div>
+            </div>
         </Router>
     );
 };

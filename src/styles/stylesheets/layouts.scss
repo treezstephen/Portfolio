@@ -11,3 +11,13 @@
     @extend .flex;
     align-items: center;
 }
+
+.container {
+    max-width: 1650px;
+    margin: auto;
+}
+
+.section {
+    margin-top: 24px;
+    padding: 24px;
+}
