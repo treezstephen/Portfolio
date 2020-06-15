@@ -5,4 +5,4 @@ export const SECONDARY_TEXT_COLOR = '#828C99';
 
 export const Layout = {
     maxWidth: 1650,
-}
+};

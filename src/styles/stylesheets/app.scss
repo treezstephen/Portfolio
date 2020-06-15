@@ -1,5 +1,7 @@
 @import './colors.scss';
 @import './fonts.scss';
+@import './layouts.scss';
+@import './navbar.scss';
 
 #root {
     height: 100vh;
@@ -10,4 +12,15 @@ body {
     -webkit-font-smoothing: antialiased;
     color: $white;
     background-color: $blue-primary;
+}
+
+a {
+    color: $white; 
+    border-bottom: none;
+    
+    &:hover {
+        border-bottom: 1px solid $grey;
+        color: $grey;
+        cursor: pointer;
+    }
 }

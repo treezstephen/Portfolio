@@ -1,0 +1,52 @@
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100px;
+}
+
+.name {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+}
+
+.nav-overlay {
+    background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -o-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.nav-overlay.open {
+    @extend .nav-overlay;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.nav-overlay-links {
+    a {
+        font-size: 4rem;
+        line-height: 2;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+    }
+    
+}
