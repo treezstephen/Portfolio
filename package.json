@@ -47,6 +47,7 @@
     },
     "dependencies": {
         "@types/react-router-dom": "^5.1.5",
+        "antd": "^4.3.4",
         "react": "^16.13.1",
         "react-animated-burgers": "^1.2.7",
         "react-dom": "^16.13.1",

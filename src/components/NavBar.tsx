@@ -3,7 +3,6 @@ import React, {
     useState,
 } from 'react';
 import { 
-    useSpring, 
     animated, 
     config,
     useTrail,
@@ -15,6 +14,7 @@ import { PRIMARY_TEXT_COLOR }          from '../styles/app';
 export const NavBar: FunctionComponent = () => {
     
     const [isOpen, setIsOpen] = useState<boolean>(false);
+
     
     const items = [
         <Link key='home'       to='/'            onClick={() => setIsOpen(false)}>HOME       </Link>,
@@ -40,7 +40,7 @@ export const NavBar: FunctionComponent = () => {
         return (
             <div className='nav-spacer'></div>
         );
-    }
+    };
     
     return (
         <>
