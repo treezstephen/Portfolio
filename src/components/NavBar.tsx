@@ -19,7 +19,7 @@ export const NavBar: FunctionComponent = () => {
     const items = [
         <Link key='home'       to='/'            onClick={() => setIsOpen(false)}>HOME       </Link>,
         <Link key='about'      to='/about'       onClick={() => setIsOpen(false)}>ABOUT       </Link>,
-        <Link key='experience' to='/experiences' onClick={() => setIsOpen(false)}>EXPERIENCES </Link>,
+        <Link key='experience' to='/experience'  onClick={() => setIsOpen(false)}>EXPERIENCE </Link>,
         <Link key='projects'   to='/projects'    onClick={() => setIsOpen(false)}>PROJECTS    </Link>,
         <Link key='contact'    to='/contact'     onClick={() => setIsOpen(false)}>CONTACT     </Link>,
     ];

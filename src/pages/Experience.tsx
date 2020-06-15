@@ -21,7 +21,7 @@ import {
 import { useHistory } from 'react-router';
 import { IconTag }    from '../components/IconTag';
 
-export const Experiences: FunctionComponent = () => {
+export const Experience: FunctionComponent = () => {
     const history = useHistory();
     
     return (

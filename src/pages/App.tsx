@@ -9,7 +9,7 @@ import {
 import { NavBar }              from '../components/NavBar';
 import { About }               from './About';
 import { Contact }             from './Contact';
-import { Experiences }         from './Experiences';
+import { Experience }          from './Experience';
 import { Home }                from './Home';
 import { Projects }            from './Projects';
 
@@ -21,7 +21,7 @@ export const App: FunctionComponent = () => {
                 <div className="section">
                     <Switch>
                         <Route path='/about'        component={About} />
-                        <Route path='/experiences'  component={Experiences} />
+                        <Route path='/experience'   component={Experience} />
                         <Route path='/projects'     component={Projects} />
                         <Route path='/contact'      component={Contact} />
                         <Route path='/'             component={Home} />
