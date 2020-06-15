@@ -7,20 +7,26 @@
     height: 100vh;
 }
 
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: $default-font;
     -webkit-font-smoothing: antialiased;
-    color: $white;
     background-color: $blue-primary;
+    color: $white;
+    font-family: $default-font;
+    margin: 0;
 }
 
 a {
-    color: $white; 
     border-bottom: none;
+    color: $white; 
     
     &:hover {
-        border-bottom: 1px solid $grey;
-        color: $grey;
+        border-bottom: 1px solid $peach_primary;
+        color: $peach_primary;
         cursor: pointer;
     }
 }

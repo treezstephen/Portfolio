@@ -1,10 +1,11 @@
 .nav-bar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
     height: 100px;
+    left: 0;
+    padding: 24px 36px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .name {
@@ -13,39 +14,31 @@
 }
 
 .nav-overlay {
-    background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
-    width: 100%;
+    align-items: center;
+    background-image: linear-gradient(to right, $blue-primary, $peach-primary);
+    display: flex;
     height: 100vh;
+    justify-content: center;
+    left: 0;
     position: fixed;
     top: 0;
-    left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    -o-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
+    transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    width: 100%;
 }
 
 .nav-overlay.open {
     @extend .nav-overlay;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
 .nav-overlay-links {
+    text-align: center;
+    
     a {
         font-size: 4rem;
-        line-height: 2;
         letter-spacing: 0.1em;
+        line-height: 2;
         text-decoration: none;
     }
     
