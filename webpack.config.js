@@ -5,36 +5,37 @@ const TerserWebpackPlugin = require('terser-webpack-plugin');
 const isProd = process.env.NODE_ENV === 'production';
 
 const config = {
-    mode: isProd ? 'production' : 'development',
     entry: {
         index: './src/index.tsx',
     },
-    output: {
-        path: resolve(__dirname, 'dist'),
-        filename: '[name].js',
-    },
-    resolve: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-    },
+    mode:   isProd ? 'production' : 'development',
     module: {
         rules: [
             {
-                test: /\.tsx?$/,
-                use: 'babel-loader',
                 exclude: /node_modules/,
+                test:    /\.tsx?$/,
+                use:     'babel-loader',
             },
             {
                 test: /\.(scss|css)$/,
-                use: ["style-loader", "css-loader", "sass-loader"],
-            }
+                use:  ['style-loader', 'css-loader', 'sass-loader'],
+            },
         ],
+    },
+    output: {
+        filename:   '[name].js',
+        path:       resolve(__dirname, 'dist'),
+        publicPath: '/',
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'stephencheung',
             template: 'src/index.html',
+            title:    'stephencheung',
         }),
     ],
+    resolve: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    },
 };
 
 if (isProd) {
@@ -46,12 +47,13 @@ if (isProd) {
 } else {
     // for more information, see https://webpack.js.org/configuration/dev-server
     config.devServer = {
-        port: 9999,
-        open: true,
-        hot: true,
-        compress: true,
-        stats: 'errors-only',
-        overlay: true,
+        compress:           true,
+        historyApiFallback: true,
+        hot:                true,
+        open:               true,
+        overlay:            true,
+        port:               9999,
+        stats:              'errors-only',
     };
 }
 

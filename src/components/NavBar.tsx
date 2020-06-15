@@ -9,14 +9,8 @@ import {
     useTrail,
 }                                      from 'react-spring';
 import { HamburgerCollapseReverse }    from 'react-animated-burgers';
+import { Link }                        from 'react-router-dom';
 import { PRIMARY_TEXT_COLOR }          from '../styles/app';
-
-const items = [
-    <a key='about' href='/'>ABOUT</a>,
-    <a key='experience' href='/'>EXPERIENCE</a>,
-    <a key='projects' href='/'>PROJECTS</a>,
-    <a key='count' href='/'>CONTACT</a>,
-];
 
 export const NavBar: FunctionComponent = () => {
     
@@ -32,7 +26,7 @@ export const NavBar: FunctionComponent = () => {
     const linkAnimation = useSpring({
         config: config.wobbly,
         delay:  800,
-        from: { 
+        from:   { 
             opacity:   0 ,
             transform: 'translate3d(0, 30px, 0)', 
         },
@@ -41,6 +35,14 @@ export const NavBar: FunctionComponent = () => {
             transform: 'translate3d(0, 0, 0)', 
         },
     });
+    
+    const items = [
+        <Link key='home'       to='/'            onClick={() => setIsOpen(false)}>HOME       </Link>,
+        <Link key='about'      to='/about'       onClick={() => setIsOpen(false)}>ABOUT       </Link>,
+        <Link key='experience' to='/experiences' onClick={() => setIsOpen(false)}>EXPERIENCES </Link>,
+        <Link key='projects'   to='/projects'    onClick={() => setIsOpen(false)}>PROJECTS    </Link>,
+        <Link key='contact'    to='/contact'     onClick={() => setIsOpen(false)}>CONTACT     </Link>,
+    ];
     
     const trail = useTrail(items.length, {
         config,
