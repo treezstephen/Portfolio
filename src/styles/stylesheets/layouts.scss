@@ -18,14 +18,16 @@
 }
 
 .page-header {
-    .ant-page-header-heading-title,
-    .ant-page-header-back-button {
-        font-size: 32px;
-        color: $white;
-    }
+    font-size: 32px;
 }
 
 .section {
     margin-top: 24px;
     padding: 24px;
+}
+
+.article {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
 }

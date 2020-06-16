@@ -1,0 +1,30 @@
+.bio-header {
+    margin-bottom: 24px;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.subtitle {
+    color: $secondary-text-color;
+    font-size: 28px;
+    font-style: italic;
+    line-height: 36px;
+}
+
+.biography {
+    font-style: italic;    
+}
+
+.channels {
+    margin: 24px;
+    font-size: 100%;
+    vertical-align: baseline;
+    
+    svg {
+        width: 32px;
+        height: 32px;
+        margin: 0 2%;
+    }
+}

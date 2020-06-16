@@ -17,11 +17,11 @@ export const NavBar: FunctionComponent = () => {
 
     
     const items = [
-        <Link key='home'       to='/'            onClick={() => setIsOpen(false)}>HOME       </Link>,
-        <Link key='about'      to='/about'       onClick={() => setIsOpen(false)}>ABOUT       </Link>,
-        <Link key='experience' to='/experience'  onClick={() => setIsOpen(false)}>EXPERIENCE </Link>,
-        <Link key='projects'   to='/projects'    onClick={() => setIsOpen(false)}>PROJECTS    </Link>,
-        <Link key='contact'    to='/contact'     onClick={() => setIsOpen(false)}>CONTACT     </Link>,
+        <Link key='home'       to='/'            onClick={() => setIsOpen(false)}>home        </Link>,
+        <Link key='about'      to='/about'       onClick={() => setIsOpen(false)}>about       </Link>,
+        <Link key='experience' to='/experience'  onClick={() => setIsOpen(false)}>experience  </Link>,
+        <Link key='projects'   to='/projects'    onClick={() => setIsOpen(false)}>projects    </Link>,
+        <Link key='contact'    to='/contact'     onClick={() => setIsOpen(false)}>contact     </Link>,
     ];
     
     const trail = useTrail(items.length, {
@@ -47,7 +47,7 @@ export const NavBar: FunctionComponent = () => {
             <div className = 'nav-bar space-between'>
                 <div className = 'aligned'>
                     <a className = 'name'>
-                        Stephen Cheung
+                        stephencheung
                     </a>
                 </div>
                 <HamburgerCollapseReverse

@@ -4,6 +4,8 @@
 @import './layouts.scss';
 @import './navbar.scss';
 @import './experiences.scss';
+@import './overrides.scss';
+@import './about.scss';
 
 #root {
     height: 100vh;
@@ -16,19 +18,20 @@
 
 body {
     -webkit-font-smoothing: antialiased;
-    background-color: $blue-primary;
-    color: $white;
+    background-color: $background-color;
+    color: $primary-text-color;
     font-family: $default-font;
     margin: 0;
+    font-size: 20px;
 }
 
 a {
     border-bottom: none;
-    color: $white; 
+    color: $primary-text-color; 
     
     &:hover {
-        border-bottom: 1px solid $peach_primary;
-        color: $peach_primary;
+        border-bottom: 1px solid $secondary-text-color;
+        color: $secondary-text-color;
         cursor: pointer;
     }
 }
