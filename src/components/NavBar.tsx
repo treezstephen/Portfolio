@@ -46,9 +46,9 @@ export const NavBar: FunctionComponent = () => {
         <>
             <div className = 'nav-bar space-between'>
                 <div className = 'aligned'>
-                    <a className = 'name'>
+                    <Link to='/' onClick={() => setIsOpen(false)} className = 'name'>
                         stephencheung
-                    </a>
+                    </Link>
                 </div>
                 <HamburgerCollapseReverse
                     barColor     = { PRIMARY_TEXT_COLOR }

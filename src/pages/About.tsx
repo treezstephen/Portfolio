@@ -14,7 +14,7 @@ export const About: FunctionComponent = () => {
     return (
         <div>
             <div className='page-header'>about</div>
-            <div className='article'>
+            <div className='article centered'>
                 <div className="bio-header">
                     <div className='title'>
                         Software Engineer
