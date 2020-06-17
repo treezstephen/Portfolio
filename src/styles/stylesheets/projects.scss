@@ -1,12 +1,78 @@
-a.project-link {
-    svg {
-        width: 16px;
-        height: 16px;
+.projects {
+    
+    .grid {
+        display: grid;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));    
     }
     
-    &:hover {
-        border-bottom: none;
-        color: $secondary-text-color !important;
-        cursor: pointer;
+    .tile {
+        background-color: $secondary-background-color;
+        padding: 12px;
+        height: 360px;
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+        
+        .tile-header {
+            padding: 8px;
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            
+            .project-icon {
+                svg {
+                    color: $secondary-text-color;
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+            
+            .project-links {
+                @extend .space-between;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+                
+                &:hover {
+                    border-bottom: none;
+                    color: $third-text-color;
+                    cursor: pointer;
+                }
+                
+                a {
+                    color: $secondary-text-color;
+                    &:hover {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+        
+        .project-body {
+            .project-title {
+                font-size: 20px;
+                font-style: italic;
+                color: #2DA8D8FF;
+            }
+            
+            .project-description {
+                color: $grey;
+                font-size: 16px;
+                font-style: italic;
+            }
+        }
+        
+        .project-footer {
+            @extend .aligned;
+            
+            .technology {
+                margin: 4px;
+                color: $secondary-text-color;
+                font-size: 12px;
+                font-style: italic;
+                font-weight: 600;
+            }
+        }
     }
 }

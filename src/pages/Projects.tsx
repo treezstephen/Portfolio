@@ -1,66 +1,102 @@
 import React, {
     FunctionComponent,
 } from 'react';
-import { Card, Col, Row } from 'antd';
 import {
     FaGithub,
     FaExternalLinkAlt,
+    FaRegFolderOpen,
 } from 'react-icons/fa';
 
 
 export const Projects: FunctionComponent = () => {
+    
     return (
-        <div>
+        <div className='projects'>
             <div className="page-header">projects</div>
             
-            <div className="article">
-                <Row gutter={16}>
-                    <Col span={8}>
-                        <Card 
-                            className='project-card'
-                            title='PinIt'
-                            actions={[
-                                <a className='project-link' key={'pinit-app'} href="https://pin-it-165.herokuapp.com/">
-                                    <FaExternalLinkAlt />
-                                </a>,
-                                <a className='project-link' key={'pinit-git'} href="https://github.com/treezstephen/PinIt">
-                                    <FaGithub />
-                                </a>,
-                            ]}
-                        >
+            <div className="article grid">
+                <div className="tile">
+                    <div className="tile-header">
+                        <div className="project-icon">
+                            <FaRegFolderOpen />
+                        </div>
+                        <div className="project-links">
+                            <a href="https://github.com/treezstephen/PinIt">
+                                <FaGithub />
+                            </a>
+                            <a href="https://pin-it-165.herokuapp.com/">
+                                <FaExternalLinkAlt />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="project-body">
+                        <div className="project-title">
+                            PinIt
+                        </div>
+                        <div className="project-description">
                             PinIt is a Pinterest like application, where users can share their life moments. 
                             Goal of PinIt is to make a customizable canvas for users to show their unique interests.
-                        </Card>
-                    </Col>
-                    <Col span={8}>
-                        <Card 
-                            title='MaterialsApp'
-                            actions={[
-                                <a className='project-link' key={'material-app'} href="https://materialsapp-d28fb.firebaseapp.com/">
-                                    <FaExternalLinkAlt />
-                                </a>,
-                                <a className='project-link' key={'material-git'} href="https://github.com/treezstephen/materialsApp">
-                                    <FaGithub />
-                                </a>,
-                            ]}
-                        >
-                            MaterialsApp is a web application to spread details of the hazards of common construction materials. This application integrates Quartzproject's database.
-                        </Card>
-                    </Col>
-                    <Col span={8}>
-                        <Card 
-                            title='JumpinStory'
-                            actions={[
-                                <a className='project-link' key={'jumpinstory-git'} href="https://github.com/treezstephen/JumpinStory">
-                                    <FaGithub />
-                                </a>,
-                            ]}
-                        >
-                            2D game made using OpenGL to simulate a jump quest in Maplestory. Goal of the game is to complete this jump quest and escape using the Taxi.
-                        </Card>
-                    </Col>
-                </Row>
-                
+                        </div>
+                    </div>
+                    <div className="project-footer">
+                        <div className="technology">Ruby on Rails</div>
+                        <div className="technology">SQLite</div>
+                        <div className="technology">Heroku</div>
+                    </div>
+                </div>
+                <div className="tile">
+                    <div className="tile-header">
+                        <div className="project-icon">
+                            <FaRegFolderOpen />
+                        </div>
+                        <div className="project-links">
+                            <a href="https://github.com/treezstephen/materialsApp">
+                                <FaGithub />
+                            </a>
+                            <a href="https://materialsapp-d28fb.firebaseapp.com/">
+                                <FaExternalLinkAlt />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="project-body">
+                        <div className="project-title">
+                            MaterialsApp
+                        </div>
+                        <div className="project-description">
+                        MaterialsApp is a web application to spread details of the hazards of common construction materials. This application integrates Quartzproject's database.
+                        </div>
+                    </div>
+                    <div className="project-footer">
+                        <div className="technology">TypeScript</div>
+                        <div className="technology">Firebase</div>
+                        <div className="technology">QuartzProject</div>
+                    </div>
+                </div>
+                <div className="tile">
+                    <div className="tile-header">
+                        <div className="project-icon">
+                            <FaRegFolderOpen />
+                        </div>
+                        <div className="project-links">
+                            <div/>
+                            <a href="https://github.com/treezstephen/JumpinStory">
+                                <FaGithub />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="project-body">
+                        <div className="project-title">
+                            JumpinStory
+                        </div>
+                        <div className="project-description">
+                        2D game made using OpenGL to simulate a jump quest in Maplestory. Goal of the game is to complete this jump quest and escape using the Taxi.
+                        </div>
+                    </div>
+                    <div className="project-footer">
+                        <div className="technology">Java</div>
+                        <div className="technology">OpenGL</div>
+                    </div>
+                </div>
             </div>
         </div>
     );
