@@ -1,4 +1,4 @@
-@import '~antd/dist/antd.css';
+
 @import './colors.scss';
 @import './fonts.scss';
 @import './layouts.scss';
@@ -31,6 +31,7 @@ body {
 a {
     border-bottom: none;
     color: $primary-text-color; 
+    text-decoration: none;
     
     &:hover {
         border-bottom: 1px solid $third-text-color;
