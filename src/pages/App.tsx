@@ -18,15 +18,13 @@ export const App: FunctionComponent = () => {
         <Router>
             <NavBar />
             <div className="container">
-                <div className="section">
-                    <Switch>
-                        <Route path='/about'        component={About} />
-                        <Route path='/experience'   component={Experience} />
-                        <Route path='/projects'     component={Projects} />
-                        <Route path='/contact'      component={Contact} />
-                        <Route path='/'             component={Home} />
-                    </Switch>    
-                </div>
+                <Switch>
+                    <Route path='/about'        component={About} />
+                    <Route path='/experience'   component={Experience} />
+                    <Route path='/projects'     component={Projects} />
+                    <Route path='/contact'      component={Contact} />
+                    <Route path='/'             component={Home} />
+                </Switch>    
             </div>
         </Router>
     );

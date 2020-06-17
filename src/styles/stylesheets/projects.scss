@@ -34,16 +34,11 @@
                     height: 20px;
                 }
                 
-                &:hover {
-                    border-bottom: none;
-                    color: $third-text-color;
-                    cursor: pointer;
-                }
-                
                 a {
                     color: $secondary-text-color;
                     &:hover {
-                        border-bottom: none;
+                        color: $third-text-color;
+                        border-bottom: $third-text-color;
                     }
                 }
             }
@@ -52,14 +47,12 @@
         .project-body {
             .project-title {
                 font-size: 20px;
-                font-style: italic;
-                color: #2DA8D8FF;
+                color: $secondary-text-color;
             }
             
             .project-description {
                 color: $grey;
                 font-size: 16px;
-                font-style: italic;
             }
         }
         
@@ -68,7 +61,7 @@
             
             .technology {
                 margin: 4px;
-                color: $secondary-text-color;
+                color: $third-text-color;
                 font-size: 12px;
                 font-style: italic;
                 font-weight: 600;

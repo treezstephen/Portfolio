@@ -9,7 +9,6 @@ import {
 }                                      from 'react-spring';
 import { HamburgerCollapseReverse }    from 'react-animated-burgers';
 import { Link }                        from 'react-router-dom';
-import { PRIMARY_TEXT_COLOR }          from '../styles/app';
 
 export const NavBar: FunctionComponent = () => {
     
@@ -51,7 +50,7 @@ export const NavBar: FunctionComponent = () => {
                     </Link>
                 </div>
                 <HamburgerCollapseReverse
-                    barColor     = { PRIMARY_TEXT_COLOR }
+                    className    = 'nav-button '
                     isActive     = { isOpen }
                     toggleButton = { () => setIsOpen(!isOpen) }
                 />

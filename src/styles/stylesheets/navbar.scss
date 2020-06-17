@@ -15,7 +15,7 @@
 
 .nav-overlay {
     align-items: center;
-    background-image: linear-gradient(to right, $background-color, $secondary-text-color);
+    background-image: linear-gradient(to right, $background-color, $grey);
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -48,4 +48,25 @@
 
 .nav-spacer {
     height: 100px;
+}
+
+.nav-button {
+    outline: none;
+    span {
+        background-color: $white;
+        &:before,
+        &:after {
+            background-color: $white;
+        }
+    }
+    
+    &:hover {
+        span {
+            background-color: $third-text-color;
+            &:before,
+            &:after {
+                background-color: $third-text-color;
+            }
+        }
+    }
 }

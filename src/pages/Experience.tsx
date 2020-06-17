@@ -1,24 +1,17 @@
 import React, {
     FunctionComponent,
 } from 'react';
-import { 
-    Card,
-    Divider,
-    List,
-} from 'antd';
-import {
-    DiJava,
-    DiJavascript1,
-    DiMysql,
-    DiPostgresql,
-    DiRuby,
-    DiHtml5,
-    DiJenkins,
-    DiCss3,
-    DiNodejs,
-    DiJqueryLogo,
-} from 'react-icons/di';
-import { IconTag }    from '../components/IconTag';
+import { Title } from '../components/Title';
+
+const TREEZ_BULLETS = [
+    'Full Stack web-development using Node, Java, TypeScript, React/Redux, MySQL, Postgres, etc.',
+    'Integrated POS with third party state tracking system to allow clients to be compliant with state regulations.',
+    'Developed centralized microservices to expand product line in support multitenancy.',
+    'Acted as main developer support to debug any production issues for over 150 clients.',
+    'Built and designed inventory management modules improving client\'s workflows.',
+    'Built both internal/external tools increasing supportability of the application.',
+    'Developed a generic CRUD API using Java’s Reflection API to centralize Entity management.',
+];
 
 const TOUR_MEGA_BULLETS = [
     'Full Stack web-development using Ruby on Rails.',
@@ -27,107 +20,83 @@ const TOUR_MEGA_BULLETS = [
     'Wrote importer to map partner’s tours into our application.',
 ];
 
-const KUMON_BULLETS = [
-    'Delegated and assigned responsibilities to other instructors in teaching up to 30 students at any given time.',
-    'Managed the performance and progression of all my student.',
-    'Responsible for teaching college level Calculus.',
-];
-
 export const Experience: FunctionComponent = () => {
     return (
-        <div>
-            <div className="page-header">experience</div>
+        <div className='section'>
             
             <div className="article">
-                <Divider 
-                    className   = 'experience-company'
-                    orientation = 'left'
-                >
-                    <img src='/resources/images/treez.png'/>
-                </Divider>
-                <Card 
-                    title = {
-                        <div className='experience-job space-between'>
-                            <div>Software Engineer @ Treez.io</div>
-                            <div>Nov 2017 - Present</div>
+                <div className="experience">
+                    <Title text='experience'/>
+                    <div className="job-grid">
+                        <div className="job-experience">
+                            <div className="job-logo">
+                                <img src='/resources/images/treez.png'/>    
+                            </div>
+                            <div className="job-info">
+                                <div className="job-company">
+                                    <a href='https://treez.io/'>Treez</a>
+                                </div>
+                                <div className="job-role">
+                                    Software Engineer, Since November 2017
+                                </div>
+                                <div className="job-location">
+                                    Oakland, CA
+                                </div>
+                                <div className="job-company-description">
+                                    Treez is an enterprise software platform solution company for retailers in the cannabis space.
+                                </div>
+                                <div className="job-description">
+                                    <ul>
+                                        {
+                                            TREEZ_BULLETS.map(b => {
+                                                return (
+                                                    <li key={b}>
+                                                        { b }
+                                                    </li>
+                                                );
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    }
-                >
-                    <List
-                        header     = 'Treez is an enterprise software platform solution company for retailers in the cannabis space.'
-                        dataSource = { TOUR_MEGA_BULLETS }
-                        renderItem = { item => <List.Item>{item}</List.Item> }
-                        size       = 'large'
-                        footer     = {
-                            <>
-                                <IconTag Icon={ DiJavascript1 } />
-                                <IconTag Icon={ DiJava } />
-                                <IconTag Icon={ DiNodejs } />
-                                <IconTag Icon={ DiMysql } />
-                                <IconTag Icon={ DiPostgresql } />
-                                <IconTag Icon={ DiJenkins } />
-                                <IconTag Icon={ DiHtml5 } />
-                                <IconTag Icon={ DiCss3 } />
-                            </>
-                        }
-                    />
-                </Card>
-                
-                <Divider 
-                    className   = 'experience-company'
-                    orientation = 'left'
-                >
-                    <img src='/resources/images/tourmega.png'/>
-                </Divider>
-                
-                <Card 
-                    title = {
-                        <div className='experience-job space-between'>
-                            <div>Software Engineering Intern @ TourMega</div>
-                            <div>Jun 2017 - Nov 2017</div>
+                    
+                        <div className="job-experience">
+                            <div className="job-logo dark">
+                                <img src='/resources/images/tourmega.png'/>    
+                            </div>
+                            <div className="job-info">
+                                <div className="job-company">
+                                    <a href='https://www.tourmega.com/'>TourMega</a>
+                                </div>
+                                <div className="job-role">
+                                    Software Engineering Intern, June 2017 - November 2017
+                                </div>
+                                <div className="job-location">
+                                    Mountain View, CA
+                                </div>
+                                <div className="job-company-description">
+                                    TourMega is a search engine designed specifically for tours and activities around the world (Kayak for Tours and Activities).
+                                </div>
+                                <div className="job-description">
+                                    <ul>
+                                        {
+                                            TOUR_MEGA_BULLETS.map(b => {
+                                                return (
+                                                    <li key={b}>
+                                                        { b }
+                                                    </li>
+                                                );
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    }
-                >
-                    <List
-                        header     = 'TourMega is a search engine designed specifically for tours and activities around the world (Kayak for Tours and Activities).'
-                        dataSource = { TOUR_MEGA_BULLETS }
-                        renderItem = { item => <List.Item>{item}</List.Item> }
-                        size       = 'large'
-                        footer     = {
-                            <>
-                                <IconTag Icon={ DiRuby } />
-                                <IconTag Icon={ DiJavascript1 } />
-                                <IconTag Icon={ DiPostgresql } />
-                                <IconTag Icon={ DiHtml5 } />
-                                <IconTag Icon={ DiCss3 } />
-                                <IconTag Icon={ DiJqueryLogo } />
-                            </>
-                        }
-                    />
-                </Card>
+                        
+                    </div>    
+                </div>
                 
-                <Divider 
-                    className   = 'experience-company'
-                    orientation = 'left'
-                >
-                    <img style={{backgroundColor: 'white'}} src='/resources/images/kumon.jpeg'/>
-                </Divider>
-                
-                <Card 
-                    title = {
-                        <div className='experience-job space-between'>
-                            <div>Lead Math Instructor @ Kumon Math & Reading</div>
-                            <div>May 2015 - Nov 2017</div>
-                        </div>
-                    }
-                >
-                    <List
-                        header     = 'Kumon learning centers for children specializes in nationwide after school math and reading programs for preschool students through 12th grade.'
-                        dataSource = { KUMON_BULLETS }
-                        renderItem = { item => <List.Item>{item}</List.Item> }
-                        size       = 'large'
-                    />
-                </Card>        
             </div>
         
         </div>

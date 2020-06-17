@@ -6,17 +6,19 @@ import {
     FaInstagram,
     FaGithub,
 } from 'react-icons/fa';
+import { Title } from '../components/Title';
 
 const ABOUT_TEXT = 'My name is Stephen Cheung, Software Engineer at Treez.io. Coding for curiosity is a motto I have adopted in this evolving world of software development. Whether for work or for a hobby, adding new technology to my arsenal is always a treat. Let\'s work on the next big project together. Connect with me with my channels below.';
 const ABOUT_SUBTITLE_TEXT = 'Full-stack developer based in the Bay Area';
 
 export const About: FunctionComponent = () => {
     return (
-        <div>
-            <div className='page-header'>about</div>
+        <div className='section'>
             <div className='article centered'>
+                <Title text='about'/>
+                
                 <div className="bio-header">
-                    <div className='title'>
+                    <div className='bio-title'>
                         Software Engineer
                     </div>
                     <div className="subtitle">

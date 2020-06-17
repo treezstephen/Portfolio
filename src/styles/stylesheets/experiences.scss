@@ -1,3 +1,67 @@
+.experience {
+    
+    .job-grid {
+        display: grid;
+        grid-row-gap: 48px;
+    }
+    
+    .job-experience {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 24px;
+        
+        .job-logo {
+            background-color: $off-white;
+            height: 250px;
+            border-radius: 20%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            
+            &.dark {
+                background-color: $secondary-text-color;
+            }
+            
+            img {
+                width: 200px;
+            }
+        }
+        
+        .job-info {
+            display: grid;
+            grid-template-rows: 40px 28px 28px 60px auto;
+            
+            .job-company {                
+                line-height: 1.45;
+                font-size: 28px;
+                font-weight: bolder;
+                
+                a {
+                    color: $third-text-color;
+                }
+            }
+            
+            .job-role {
+                color: $secondary-text-color;
+                font-weight: bolder;
+            }
+            
+            .job-location {
+                font-weight: bolder;
+            }
+            
+            .job-company-description {
+                font-size: 18px;;
+                font-style: italic;
+            }
+            
+            .job-description {
+                font-size: 16px;;
+            }
+        }
+    }
+}
+
 .experience-company {
     span {
         font-size: 3rem;

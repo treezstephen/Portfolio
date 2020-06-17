@@ -7,6 +7,8 @@
 @import './overrides.scss';
 @import './about.scss';
 @import './projects.scss';
+@import './title.scss';
+@import './contact.scss';
 
 #root {
     height: 100vh;
@@ -31,8 +33,8 @@ a {
     color: $primary-text-color; 
     
     &:hover {
-        border-bottom: 1px solid $secondary-text-color;
-        color: $secondary-text-color;
+        border-bottom: 1px solid $third-text-color;
+        color: $third-text-color;
         cursor: pointer;
     }
 }
