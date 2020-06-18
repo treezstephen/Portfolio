@@ -1,7 +1,9 @@
 import React, {
     FunctionComponent,
 } from 'react';
-import { Title } from '../components/Title';
+import { Title }     from '../components/Title';
+import TreezLogo     from '../../resources/images/treez.png';
+import TourMegaLogo  from '../../resources/images/treez.png';
 
 const TREEZ_BULLETS = [
     'Full Stack web-development using Node, Java, TypeScript, React/Redux, MySQL, Postgres, etc.',
@@ -31,7 +33,7 @@ export const Experience: FunctionComponent = () => {
                     <div className="job-grid">
                         <div className="job-experience">
                             <div className="job-logo">
-                                <img src='./resources/images/treez.png'/>    
+                                <img src={ TreezLogo } />    
                             </div>
                             <div className="job-info">
                                 <div className="job-company">
@@ -64,7 +66,7 @@ export const Experience: FunctionComponent = () => {
                     
                         <div className="job-experience">
                             <div className="job-logo dark">
-                                <img src='./resources/images/tourmega.png'/>    
+                                <img src={ TourMegaLogo }/>    
                             </div>
                             <div className="job-info">
                                 <div className="job-company">
