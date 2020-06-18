@@ -18,4 +18,4 @@ export const Title: FunctionComponent<Props> = (props: Props) => {
             </div>
         </div>
     );
-}
+};
