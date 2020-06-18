@@ -31,7 +31,7 @@ export const Experience: FunctionComponent = () => {
                     <div className="job-grid">
                         <div className="job-experience">
                             <div className="job-logo">
-                                <img src='../resources/images/treez.png'/>    
+                                <img src='./resources/images/treez.png'/>    
                             </div>
                             <div className="job-info">
                                 <div className="job-company">
@@ -64,7 +64,7 @@ export const Experience: FunctionComponent = () => {
                     
                         <div className="job-experience">
                             <div className="job-logo dark">
-                                <img src='../resources/images/tourmega.png'/>    
+                                <img src='./resources/images/tourmega.png'/>    
                             </div>
                             <div className="job-info">
                                 <div className="job-company">
