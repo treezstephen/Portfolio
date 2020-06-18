@@ -3,7 +3,7 @@ import React, {
 } from 'react';
 import { Title }     from '../components/Title';
 import TreezLogo     from '../../resources/images/treez.png';
-import TourMegaLogo  from '../../resources/images/treez.png';
+import TourMegaLogo  from '../../resources/images/tourmega.png';
 
 const TREEZ_BULLETS = [
     'Full Stack web-development using Node, Java, TypeScript, React/Redux, MySQL, Postgres, etc.',
