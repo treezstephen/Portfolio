@@ -20,6 +20,10 @@ const config = {
                 test: /\.(scss|css)$/,
                 use:  ['style-loader', 'css-loader', 'sass-loader'],
             },
+            {
+                test: /\.(jpg|png|svg|woff|woff2|eot|ttf|svg)$/,
+                use:  'file-loader',
+            },
         ],
     },
     output: {
