@@ -2,13 +2,13 @@
 @import './colors.scss';
 @import './fonts.scss';
 @import './layouts.scss';
-@import './navbar.scss';
-@import './experiences.scss';
-@import './overrides.scss';
+
 @import './about.scss';
+@import './contact.scss';
+@import './experiences.scss';
+@import './navbar.scss';
 @import './projects.scss';
 @import './title.scss';
-@import './contact.scss';
 
 #root {
     height: 100vh;

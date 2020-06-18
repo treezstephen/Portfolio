@@ -29,7 +29,7 @@
         
         .job-info {
             display: grid;
-            grid-template-rows: 40px 28px 28px 60px auto;
+            grid-template-rows: 40px 28px 28px 36px auto;
             
             .job-company {                
                 line-height: 1.45;
@@ -57,6 +57,7 @@
             
             .job-description {
                 font-size: 16px;;
+                line-height: 1.8;
             }
         }
     }
@@ -77,7 +78,7 @@
 
 .experience-job-title {
     font-size: 24px;
-    color: $primary-pink;
+    color: $third-text-color;
 }
 
 .experience-code-tag {

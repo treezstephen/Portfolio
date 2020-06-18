@@ -46,11 +46,13 @@
         
         .project-body {
             .project-title {
-                font-size: 20px;
+                font-size: 24px;
                 color: $secondary-text-color;
             }
             
             .project-description {
+                padding: 12px 0;
+                line-height: 1.25;
                 color: $grey;
                 font-size: 16px;
             }

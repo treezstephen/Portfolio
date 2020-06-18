@@ -6,6 +6,7 @@ import { Title } from '../components/Title';
 const TREEZ_BULLETS = [
     'Full Stack web-development using Node, Java, TypeScript, React/Redux, MySQL, Postgres, etc.',
     'Integrated POS with third party state tracking system to allow clients to be compliant with state regulations.',
+    'Utilize ElasticSearch to perform complex queries for inventory searching.',
     'Developed centralized microservices to expand product line in support multitenancy.',
     'Acted as main developer support to debug any production issues for over 150 clients.',
     'Built and designed inventory management modules improving client\'s workflows.',

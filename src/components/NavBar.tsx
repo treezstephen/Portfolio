@@ -50,7 +50,7 @@ export const NavBar: FunctionComponent = () => {
                     </Link>
                 </div>
                 <HamburgerCollapseReverse
-                    className    = 'nav-button '
+                    className    = 'nav-button'
                     isActive     = { isOpen }
                     toggleButton = { () => setIsOpen(!isOpen) }
                 />
