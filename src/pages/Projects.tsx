@@ -25,11 +25,11 @@ export const Projects: FunctionComponent = () => {
                                     <FaRegFolderOpen />
                                 </div>
                                 <div className="project-links">
-                                    <a href="https://github.com/treezstephen/PinIt" target='_blank'>
-                                        <FaGithub />
-                                    </a>
                                     <a href="https://pin-it-165.herokuapp.com/" target='_blank'>
                                         <FaExternalLinkAlt />
+                                    </a>
+                                    <a href="https://github.com/treezstephen/PinIt" target='_blank'>
+                                        <FaGithub />
                                     </a>
                                 </div>
                             </div>
@@ -54,11 +54,11 @@ export const Projects: FunctionComponent = () => {
                                     <FaRegFolderOpen />
                                 </div>
                                 <div className="project-links">
-                                    <a href="https://github.com/treezstephen/materialsApp" target='_blank'>
-                                        <FaGithub />
-                                    </a>
                                     <a href="https://materialsapp-d28fb.firebaseapp.com/" target='_blank'>
                                         <FaExternalLinkAlt />
+                                    </a>
+                                    <a href="https://github.com/treezstephen/materialsApp" target='_blank'>
+                                        <FaGithub />
                                     </a>
                                 </div>
                             </div>
