@@ -53,19 +53,19 @@
 .nav-button {
     outline: none;
     span {
-        background-color: $white;
+        background-color: $primary-text-color;
         &:before,
         &:after {
-            background-color: $white;
+            background-color: $primary-text-color;
         }
     }
     
     &:hover {
         span {
-            background-color: $third-text-color;
+            background-color: $secondary-text-color;
             &:before,
             &:after {
-                background-color: $third-text-color;
+                background-color: $secondary-text-color;
             }
         }
     }

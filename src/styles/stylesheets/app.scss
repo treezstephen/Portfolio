@@ -34,8 +34,8 @@ a {
     text-decoration: none;
     
     &:hover {
-        border-bottom: 1px solid $third-text-color;
-        color: $third-text-color;
+        border-bottom: 1px solid $secondary-text-color;
+        color: $secondary-text-color;
         cursor: pointer;
     }
 }

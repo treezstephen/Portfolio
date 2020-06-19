@@ -19,7 +19,7 @@
             justify-content:center;
             
             &.dark {
-                background-color: $secondary-text-color;
+                background-color: $experience-dark-background;
             }
             
             img {
@@ -37,12 +37,12 @@
                 font-weight: bolder;
                 
                 a {
-                    color: $third-text-color;
+                    color: $secondary-text-color;
                 }
             }
             
             .job-role {
-                color: $secondary-text-color;
+                color: $primary-text-color;
                 font-weight: bolder;
             }
             
@@ -55,7 +55,7 @@
                 font-style: italic;
             }
             
-            .job-description {
+            .job-description {;
                 font-size: 16px;;
                 line-height: 1.8;
             }
@@ -78,7 +78,7 @@
 
 .experience-job-title {
     font-size: 24px;
-    color: $third-text-color;
+    color: $secondary-text-color;
 }
 
 .experience-code-tag {

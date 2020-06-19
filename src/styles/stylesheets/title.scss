@@ -1,7 +1,7 @@
 .title-wrapper {
     width: 100%; 
     text-align: center; 
-    border-bottom: 1px solid $third-text-color; 
+    border-bottom: 1px solid $secondary-text-color; 
     line-height: 0.1em;
     margin: 12px 0 48px; 
     font-size: 36px;
@@ -10,7 +10,7 @@
 
 .title {
     display: inline;
-    color: $third-text-color;
+    color: $secondary-text-color;
     
     background: $background-color; 
     padding:0 12px; 

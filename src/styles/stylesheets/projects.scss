@@ -8,7 +8,8 @@
     }
     
     .tile {
-        background-color: $secondary-background-color;
+        border: 1px solid $primary-text-color;
+        box-shadow: 0 2px 4px 0 $primary-text-color, 0 3px 4px 0 $primary-text-color;
         padding: 12px;
         height: 360px;
         display: grid;
@@ -35,10 +36,10 @@
                 }
                 
                 a {
-                    color: $secondary-text-color;
+                    color: $primary-text-color;
                     &:hover {
-                        color: $third-text-color;
-                        border-bottom: $third-text-color;
+                        color: $secondary-text-color;
+                        border-bottom: $secondary-text-color;
                     }
                 }
             }
@@ -53,7 +54,7 @@
             .project-description {
                 padding: 12px 0;
                 line-height: 1.25;
-                color: $grey;
+                color: $primary-text-color;
                 font-size: 16px;
             }
         }
@@ -63,7 +64,7 @@
             
             .technology {
                 margin: 4px;
-                color: $third-text-color;
+                color: $primary-text-color;;
                 font-size: 12px;
                 font-style: italic;
                 font-weight: 600;
