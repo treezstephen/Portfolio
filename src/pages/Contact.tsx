@@ -21,25 +21,25 @@ export const Contact: FunctionComponent = () => {
                 <Title text='contact'/>
                 <div className="contact">
                     <div className="aligned">
-                        <a href="mailto:scheung1206@gmail.com" className='aligned'>
+                        <a href="mailto:scheung1206@gmail.com" target='_blank' className='aligned'>
                             <FiMail />  
                             <div className='contact-text'>Email</div>
                         </a>
                     </div>
                     <div className="aligned">
-                        <a href="https://www.linkedin.com/in/scheung1206/" className="aligned">
+                        <a href="https://www.linkedin.com/in/scheung1206/" target='_blank' className="aligned">
                             <FaLinkedin />
                             <div className='contact-text'>LinkedIn</div>
                         </a>
                     </div>
                     <div className="aligned">
-                        <a href="https://github.com/treezstephen" className="aligned">
+                        <a href="https://github.com/treezstephen" target='_blank' className="aligned">
                             <FaGithub />   
                             <div className='contact-text'>GitHub</div>
                         </a>
                     </div>
                     <div className="aligned">
-                        <a href="https://www.instagram.com/stephen.cheung/" className="aligned">
+                        <a href="https://www.instagram.com/stephen.cheung/" target='_blank' className="aligned">
                             <FaInstagram />
                             <div className='contact-text'>Instagram</div>
                         </a>

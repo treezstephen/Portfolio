@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, {
     FunctionComponent,
 } from 'react';
@@ -24,10 +25,10 @@ export const Projects: FunctionComponent = () => {
                                     <FaRegFolderOpen />
                                 </div>
                                 <div className="project-links">
-                                    <a href="https://github.com/treezstephen/PinIt">
+                                    <a href="https://github.com/treezstephen/PinIt" target='_blank'>
                                         <FaGithub />
                                     </a>
-                                    <a href="https://pin-it-165.herokuapp.com/">
+                                    <a href="https://pin-it-165.herokuapp.com/" target='_blank'>
                                         <FaExternalLinkAlt />
                                     </a>
                                 </div>
@@ -53,10 +54,10 @@ export const Projects: FunctionComponent = () => {
                                     <FaRegFolderOpen />
                                 </div>
                                 <div className="project-links">
-                                    <a href="https://github.com/treezstephen/materialsApp">
+                                    <a href="https://github.com/treezstephen/materialsApp" target='_blank'>
                                         <FaGithub />
                                     </a>
-                                    <a href="https://materialsapp-d28fb.firebaseapp.com/">
+                                    <a href="https://materialsapp-d28fb.firebaseapp.com/" target='_blank'>
                                         <FaExternalLinkAlt />
                                     </a>
                                 </div>
@@ -82,7 +83,7 @@ export const Projects: FunctionComponent = () => {
                                 </div>
                                 <div className="project-links">
                                     <div/>
-                                    <a href="https://github.com/treezstephen/JumpinStory">
+                                    <a href="https://github.com/treezstephen/JumpinStory" target='_blank'>
                                         <FaGithub />
                                     </a>
                                 </div>

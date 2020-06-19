@@ -25,13 +25,13 @@ export const About: FunctionComponent = () => {
                     { ABOUT_TEXT }    
                 </div>
                 <div className='channels'>
-                    <a href="https://www.linkedin.com/in/scheung1206/">
+                    <a href="https://www.linkedin.com/in/scheung1206/" target='_blank'>
                         <FaLinkedin />
                     </a>
-                    <a href="https://github.com/treezstephen">
+                    <a href="https://github.com/treezstephen" target='_blank'>
                         <FaGithub />    
                     </a>
-                    <a href="https://www.instagram.com/stephen.cheung/">
+                    <a href="https://www.instagram.com/stephen.cheung/" target='_blank'>
                         <FaInstagram />    
                     </a>
                     <a href={ Resume } target='_blank'>

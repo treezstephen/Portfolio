@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, {
     FunctionComponent,
 } from 'react';
@@ -37,7 +38,7 @@ export const Experience: FunctionComponent = () => {
                             </div>
                             <div className="job-info">
                                 <div className="job-company">
-                                    <a href='https://treez.io/'>Treez</a>
+                                    <a href='https://treez.io/' target='_blank'>Treez</a>
                                 </div>
                                 <div className="job-role">
                                     Software Engineer, Since November 2017
@@ -70,7 +71,7 @@ export const Experience: FunctionComponent = () => {
                             </div>
                             <div className="job-info">
                                 <div className="job-company">
-                                    <a href='https://www.tourmega.com/'>TourMega</a>
+                                    <a href='https://www.tourmega.com/' target='_blank'>TourMega</a>
                                 </div>
                                 <div className="job-role">
                                     Software Engineering Intern, June 2017 - November 2017
