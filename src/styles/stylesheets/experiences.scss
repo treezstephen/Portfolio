@@ -29,7 +29,7 @@
         
         .job-info {
             display: grid;
-            grid-template-rows: 40px 28px 28px 36px auto;
+            grid-row-gap: 8px;
             
             .job-company {                
                 line-height: 1.45;
