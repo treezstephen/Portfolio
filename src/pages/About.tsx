@@ -1,12 +1,14 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, {
     FunctionComponent,
 } from 'react';
 import {
-    FaLinkedin,
-    FaInstagram,
+    FaFileAlt,
     FaGithub,
+    FaInstagram,
+    FaLinkedin,
 } from 'react-icons/fa';
-import { Title } from '../components/Title';
+import Resume    from '../../resources/files/resume_stephen_cheung.pdf';
 
 const ABOUT_TEXT = 'My name is Stephen Cheung, Software Engineer at Treez.io. Coding for curiosity is a motto I have adopted in this evolving world of software development. Whether for work or for a hobby, adding new technology to my arsenal is always a treat. Let\'s work on the next big project together. Connect with me with my channels below.';
 const ABOUT_SUBTITLE_TEXT = 'Full-stack developer based in the Bay Area';
@@ -15,8 +17,6 @@ export const About: FunctionComponent = () => {
     return (
         <div className='section'>
             <div className='article centered'>
-                <Title text='about'/>
-                
                 <div className="bio-header">
                     <div className='bio-title'>
                         Software Engineer
@@ -37,6 +37,9 @@ export const About: FunctionComponent = () => {
                     </a>
                     <a href="https://www.instagram.com/stephen.cheung/">
                         <FaInstagram />    
+                    </a>
+                    <a href={ Resume } target='_blank'>
+                        <FaFileAlt />    
                     </a>
                 </div>
             </div>

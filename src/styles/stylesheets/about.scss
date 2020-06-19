@@ -3,21 +3,23 @@
 }
 
 .bio-title {
-    font-size: 36px;
+    font-size: 40px;
+    color: $third-text-color;
 }
 
 .subtitle {
     color: $secondary-text-color;
-    font-size: 28px;
+    font-size: 20px;
     font-style: italic;
     line-height: 36px;
 }
 
 .biography {
-    font-style: italic;    
+    font-size: 16px;
 }
 
 .channels {
+    padding-top: 24px;
     margin: 24px;
     font-size: 100%;
     vertical-align: baseline;
