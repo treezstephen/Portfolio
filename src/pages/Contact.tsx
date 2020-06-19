@@ -23,7 +23,7 @@ export const Contact: FunctionComponent = () => {
                     <div className="aligned">
                         <a href="mailto:scheung1206@gmail.com" className='aligned'>
                             <FiMail />  
-                            <div className='contact-text'>scheung1206@gmail.com</div>
+                            <div className='contact-text'>Email</div>
                         </a>
                     </div>
                     <div className="aligned">
