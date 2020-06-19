@@ -67,7 +67,7 @@ export const Projects: FunctionComponent = () => {
                                     MaterialsApp
                                 </div>
                                 <div className="project-description">
-                                MaterialsApp is a web application to spread details of the hazards of common construction materials. This application integrates Quartzproject's database.
+                                MaterialsApp is a web application to spread details of the hazards of common construction materials. This application integrates QuartzProject's database.
                                 </div>
                             </div>
                             <div className="project-footer">
