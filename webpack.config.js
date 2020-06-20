@@ -33,6 +33,7 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            favicon:  'favicon.ico',
             template: 'src/index.html',
             title:    'stephencheung',
         }),
