@@ -56,7 +56,7 @@ if (isProd) {
         hot:                true,
         open:               true,
         overlay:            true,
-        port:               9999,
+        port:               9000,
         stats:              'errors-only',
     };
 }
