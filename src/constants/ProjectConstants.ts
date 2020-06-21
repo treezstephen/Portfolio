@@ -31,7 +31,6 @@ export const PROJECT_LIST: Project[] = [
     {
         description:  '2D game made using OpenGL to simulate a jump quest in Maplestory. Goal of the game is to complete this jump quest and escape using the Taxi.',
         gitUrl:       'https://github.com/treezstephen/JumpinStory',
-        projectUrl:   'https://pin-it-165.herokuapp.com/',
         technologies: ['Java', 'OpenGL'],
         title:        'JumpinStory',
     },
