@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, {
-    FunctionComponent, useState,
+    FunctionComponent, 
+    useState,
 } from 'react';
 import {
     FaGithub,
@@ -24,35 +25,43 @@ export const Projects: FunctionComponent = () => {
                     <div className="grid">
                         {
                             projects.map(project => {
+                                const {
+                                    description,
+                                    gitUrl,
+                                    projectUrl,
+                                    technologies,
+                                    title,
+                                } = project;
+                                
                                 return (
-                                    <div className="tile" key={ project.title }>
+                                    <div className="tile" key={ title }>
                                         <div className="tile-header">
                                             <div className="project-icon">
                                                 <FaRegFolderOpen />
                                             </div>
                                             <div className="project-links">
                                                 {
-                                                    project.projectUrl
-                                                        ?   <a href={ project.projectUrl } target='_blank'><FaExternalLinkAlt /></a>
+                                                    projectUrl
+                                                        ?   <a href={ projectUrl } target='_blank'><FaExternalLinkAlt /></a>
                                                         :   <div/>
                                                 }
-                                                <a href={ project.gitUrl } target='_blank'>
+                                                <a href={ gitUrl } target='_blank'>
                                                     <FaGithub />
                                                 </a>
                                             </div>
                                         </div>
                                         <div className="project-body">
                                             <div className="project-title">
-                                                { project.title }
+                                                { title }
                                             </div>
                                             <div className="project-description">
-                                                { project.description }
+                                                { description }
                                             </div>
                                         </div>
                                         <div className="project-footer">
                                             {
-                                                project.technologies.map(technology => (
-                                                    <div key={ project.title + technology } className="technology">{ technology }</div>
+                                                technologies.map(technology => (
+                                                    <div key={ title + technology } className="technology">{ technology }</div>
                                                 ))
                                             }
                                         </div>
