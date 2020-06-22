@@ -9,6 +9,12 @@ export interface Project {
 
 export const PROJECT_LIST: Project[] = [
     {
+        description:  'Working with Microservices using Docker, GraphQL, Node.js, MySQL, and React',
+        gitUrl:       'https://github.com/treezstephen/microservices-demo/',
+        technologies: ['Docker', 'GraphQL', 'Node.js', 'MySQL', 'React'],
+        title:        'Microservice Sample',
+    },
+    {
         description:  'Learning Auth0 through a sample API project using Node.js, Express, and TypeScript.',
         gitUrl:       'https://github.com/treezstephen/Auth0-Express-TypeScript-Example/',
         technologies: ['Auth0', 'Node.js', 'Express', 'TypeScript'],
