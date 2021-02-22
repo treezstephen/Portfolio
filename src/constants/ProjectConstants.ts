@@ -4,7 +4,6 @@ export interface Project {
     projectUrl?:  string;
     technologies: string[];
     title:        string;
-    
 }
 
 export const PROJECT_LIST: Project[] = [
