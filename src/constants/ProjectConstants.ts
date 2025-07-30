@@ -8,6 +8,12 @@ export interface Project {
 
 export const PROJECT_LIST: Project[] = [
     {
+        description:  'Application to read Manga. Pulling data from MangaDex',
+        gitUrl:       'https://github.com/treezstephen/MangaReader',
+        technologies: ['Docker', 'GraphQL', 'Node.js', 'MongoDB', 'React'],
+        title:        'Manga Reader',
+    },
+    {
         description:  'Working with Microservices using Docker, GraphQL, Node.js, MySQL, and React',
         gitUrl:       'https://github.com/treezstephen/microservices-demo/',
         technologies: ['Docker', 'GraphQL', 'Node.js', 'MySQL', 'React'],
