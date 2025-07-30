@@ -1,16 +1,42 @@
+@use './colors.scss' as *;
+
 .nav-bar {
     background-color: $background-color;
     height: 80px;
-    padding: 0 36px 0;
+    padding: 0 36px;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 8px 6px -6px $background-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .name {
     font-size: 28px;
     letter-spacing: 0.1em;
+}
+
+.nav-button {
+    outline: none;
+    z-index: 1001;
+    
+    button {
+        div {
+            background-color: $primary-text-color !important;
+        }
+    }
+    
+    &:hover {
+        button {
+            div {
+                background-color: $secondary-text-color !important;
+            }
+        }
+    }
 }
 
 .nav-overlay {
@@ -29,44 +55,25 @@
 }
 
 .nav-overlay.open {
-    @extend .nav-overlay;
     transform: translate3d(0, 0, 0);
 }
 
 .nav-overlay-links {
     text-align: center;
     color: $secondary-text-color;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     
     a {
         font-size: 4rem;
         letter-spacing: 0.1em;
         line-height: 2;
         text-decoration: none;
+        display: block;
     }
-    
 }
 
 .nav-spacer {
-    height: 100px;
-}
-
-.nav-button {
-    outline: none;
-    span {
-        background-color: $primary-text-color;
-        &:before,
-        &:after {
-            background-color: $primary-text-color;
-        }
-    }
-    
-    &:hover {
-        span {
-            background-color: $secondary-text-color;
-            &:before,
-            &:after {
-                background-color: $secondary-text-color;
-            }
-        }
-    }
+    height: 80px;
 }

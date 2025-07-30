@@ -1,3 +1,5 @@
+@use './colors.scss' as *;
+
 .experience {
     
     .job-grid {
@@ -51,12 +53,12 @@
             }
             
             .job-company-description {
-                font-size: 18px;;
+                font-size: 18px;
                 font-style: italic;
             }
             
-            .job-description {;
-                font-size: 16px;;
+            .job-description {
+                font-size: 16px;
                 line-height: 1.8;
             }
         }

@@ -1,30 +1,24 @@
-import React, {
-    FunctionComponent, 
-}                              from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-} from 'react-router-dom';
-import { NavBar }              from '../components/NavBar';
-import { About }               from './About';
-import { Contact }             from './Contact';
-import { Experience }          from './Experience';
-import { Home }                from './Home';
-import { Projects }            from './Projects';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { FunctionComponent } from 'react';
+import { NavBar } from '../components/NavBar';
+import { About } from './About';
+import { Experience } from './Experience';
+import { Projects } from './Projects';
+import { Contact } from './Contact';
+import { Home } from './Home';
 
 export const App: FunctionComponent = () => {
     return (
         <Router>
             <NavBar />
             <div className="container">
-                <Switch>
-                    <Route path='/about'        component={About} />
-                    <Route path='/experience'   component={Experience} />
-                    <Route path='/projects'     component={Projects} />
-                    <Route path='/contact'      component={Contact} />
-                    <Route path='/'             component={Home} />
-                </Switch>    
+                <Routes>
+                    <Route path="/about" element={<About />} />
+                    <Route path="/experience" element={<Experience />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/" element={<Home />} />
+                </Routes>    
             </div>
         </Router>
     );
