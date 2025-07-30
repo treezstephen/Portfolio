@@ -12,7 +12,7 @@ import {
     FiMail,
 } from 'react-icons/fi';
 import { Title } from '../components/Title';
-import Resume    from '../../resources/files/resume_stephen_cheung.pdf';
+import Resume    from '../../resources/files/resume_stephencheung.pdf';
 
 export const Contact: FunctionComponent = () => {
     return (
