@@ -1,4 +1,4 @@
-import React, {
+import {
     FunctionComponent,
 } from 'react';
 import { About }      from './About';

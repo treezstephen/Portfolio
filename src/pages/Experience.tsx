@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React, {
+import {
     FunctionComponent,
     useState,
-}                          from 'react';
+} from 'react';
 import { Title }           from '../components/Title';
 import { EXPERIENCE_LIST } from '../constants/ExperienceConstants';
 

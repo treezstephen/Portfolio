@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React, {
+import {
     FunctionComponent, 
     useState,
 } from 'react';
